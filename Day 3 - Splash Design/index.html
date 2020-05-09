@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Splash Designs</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <!-- NAVIGATION -->
+      <nav class="flex space-between nav">
+        <!-- LOGO -->
+        <div class="flex-item page-logo">
+          <img src="/images/logos/page-logo.PNG" alt="Page Logo" />
+        </div>
+        <!-- NAVIGATION LINKS -->
+        <div class="flex-item flex-item-grow2">
+          <a href="#" class="toggleNav">☰</a>
+          <ul class="flex nav-links space-evenly">
+            <li class="flex-item"><a href="">Home</a></li>
+            <li class="flex-item"><a href="">Portfolio</a></li>
+            <li class="flex-item"><a href="">Blog</a></li>
+            <li class="flex-item"><a href="">Shop</a></li>
+            <li class="flex-item"><a href="">Pages</a></li>
+            <li class="flex-item"><a href="">Elements</a></li>
+            <li class="flex-item">
+              <a href=""><i class="fa fa-shopping-cart"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- HERO SECTION -->
+      <div class="hero flex flex-column">
+        <h1>We are <span>SPLASH</span></h1>
+        <h2>A Creative <br />Design Agency</h2>
+        <button>Get Started</button>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <section class="container">
+      <h2 class="section-heading">Who we are</h2>
+      <!-- Activities -->
+      <div>
+        <div>
+          <span class="fa fa-lightbulb-o"></span>
+          <div>Creative Design</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div>
+          <span class="fa fa-cubes"></span>
+          <div>Implementation</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div>
+          <span class="fa fa-cog"></span>
+          <div>Development</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div>
+          <span class="fa fa-rocket"></span>
+          <div>Customer Support</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+          <img
+            src="/images/abstract-burn-burnt-conceptual-604671.jpg"
+            alt=""
+            class="contain-act-item"
+          />
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="container">
+      <div>
+        <span class="fa fa-suitcase"></span>
+        <div>122</div>
+        <span>Our Projects</span>
+      </div>
+      <div>
+        <span class="fa fa-users"></span>
+        <div>100</div>
+        <span>Happy CLients</span>
+      </div>
+      <div>
+        <span class="fa fa-coffee"></span>
+        <div>435</div>
+        <span>Cups of Coffee</span>
+      </div>
+      <div>
+        <span class="fa fa-thumbs-o-up"></span>
+        <div>1200</div>
+        <span>Facebook Likes</span>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $(".toggleNav").on("click", function () {
+          $(".nav-links").toggleClass("open");
+        });
+      });
+    </script>
+  </body>
+</html>

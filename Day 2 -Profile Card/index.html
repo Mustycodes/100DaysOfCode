@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Profile Card</title>
+  <style>
+    #back {
+      width: 100%;
+      height: 100%;
+      background: rgba(231, 130, 197, 0.5);
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      position: absolute;
+    }
+
+    .container {
+      position: absolute;
+      width: 350px;
+      height: 500px;
+      margin: auto;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      bottom: 0;
+      border-radius: 25px;
+      background: linear-gradient(65deg, whitesmoke, hsl(180, 40%, 70%), whitesmoke);
+      box-shadow: 4px 3px 15px 3px #444, 0 5px 10px 4px #FFF;
+      animation-name: slide-in;
+      animation-duration: 500ms;
+      animation-timing-function: linear;
+    }
+
+    .container img {
+      display: block;
+      position: absolute;
+      /* margin: 20px auto 0; */
+      margin: auto;
+      top: 20px;
+      left: 0;
+      right: 0;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      animation-name: bounce-once;
+      animation-duration: 500ms;
+      animation-delay: 550ms;
+      animation-iteration-count: 2;
+    }
+
+    .main {
+      width: 70%;
+      position: absolute;
+      top: 230px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .main h2 {
+      font-family: 'Julee', cursive;
+      font-weight: bold;
+      color: rgb(20, 20, 20);
+      margin: 10px 0;
+    }
+
+    .main p {
+      font-size: 18px;
+      margin: 10px;
+    }
+
+    .main ul {
+      margin-top: 5px;
+      margin-left: -40px;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    .main li i {
+      font-size: 45px;
+      margin: 0 10px;
+      padding: 10px;
+      color: hsl(240, 55%, 61%);
+    }
+
+    .main li i:hover {
+      transform: scale(1.2);
+      color: hsl(240, 55%, 31%);
+    }
+
+    .main p:nth-child(4) {
+      font-family: 'Julee', cursive;
+      font-weight: bolder;
+      font-size: large;
+      color: hsl(39, 90%, 55%);
+    }
+
+    .fa-stack {
+      animation-name: bounce;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-out;
+    }
+
+    @keyframes slide-in {
+      0% {
+        top: -500px;
+      }
+
+      50% {
+        top: -200px;
+      }
+
+      100% {
+        top: 0px;
+      }
+
+    }
+
+    @keyframes bounce-once {
+      0% {
+        top: 20px;
+      }
+
+      50% {
+        top: 50px;
+        width: 250px;
+        height: 150px;
+      }
+
+      100% {
+        top: 20px;
+      }
+    }
+
+    @keyframes bounce {
+      0% {
+        /* position: relative; */
+        top: 0px;
+      }
+
+      50% {
+        top: 5px;
+      }
+
+      100% {
+        /* position: relative; */
+        top: 0px;
+      }
+      
+    }
+  </style>
+</head>
+<body>
+  <div id="back"></div>
+  <div class="container">
+    <img src="/Day 2/image/me.PNG" alt="Mustapha">
+    <div class="main">
+      <h2>Mustapha Oyenuga</h2>
+      <span>@mustycodes</span>
+      <p>Web Developer and Estate Surveyor</p>
+      <p>Follow me</p>
+
+      <span class="fa-stack">
+        <i class="fa fa-circle-thin fa-stack-2x"></i>
+  <i class="fa fa-arrow-down fa-stack-1x"></i>
+</span>
+      </span>
+      <ul>
+        <li><a href="https://www.twitter.com/Mustycodes" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/musty1k_4real/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://www.github.com/mustycodes" target="_blank"><i class="fa fa-github"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
